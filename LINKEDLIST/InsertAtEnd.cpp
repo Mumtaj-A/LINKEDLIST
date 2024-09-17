@@ -39,11 +39,11 @@ Node* insertAtEnd(Node* head, int new_data) {
     return head;
 }
 
-void printList(Node* node)
+void printList(Node* last)
 {
-    while (node != nullptr) {
-        cout << node->data << " ";
-        node = node->next;
+    while (last != nullptr) {
+        cout << last->data << " ";
+        last = last->next;
     }
      cout << endl;
 }
