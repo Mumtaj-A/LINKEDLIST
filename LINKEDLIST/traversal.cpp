@@ -3,8 +3,7 @@
 using namespace std;
 
 // A linked list node
-class Node {
-public:
+struct Node {
     int data;
     Node* next;
 
@@ -30,17 +29,13 @@ void traverseList(Node* head) {
     cout << endl;
 }
 
-// Driver Code
 int main() {
-  
-    // Create a hard-coded linked list:
-    // 10 -> 20 -> 30 -> 40
+
     Node* head = new Node(10);
     head->next = new Node(20);
     head->next->next = new Node(30);
     head->next->next->next = new Node(40);
 
-    // Example of traversing the node and printing
     traverseList(head);
 
     return 0;
